@@ -1,0 +1,151 @@
+
+# =========================
+# Compiled files
+# =========================
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+*.so
+*.a
+*.class
+*.pyc
+*.pyo
+
+# =========================
+# Build directories
+# =========================
+build/
+dist/
+bin/
+obj/
+out/
+__pycache__/
+
+# =========================
+# VS Code
+# =========================
+.vscode/*
+!.vscode/extensions.json
+
+# =========================
+# Python environments
+# =========================
+venv/
+.venv/
+env/
+ENV/
+
+# =========================
+# Java
+# =========================
+target/
+.gradle/
+*.jar
+
+# =========================
+# CMake
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# =========================
+# Operating system files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.bak
+*.swp
+*~
+```
+
+## 2. What should and shouldn't go to GitHub?
+
+| File | Upload? |
+|---|---|
+| `.c` | <badge color="success">Yes</badge> |
+| `.cpp` | <badge color="success">Yes</badge> |
+| `.py` | <badge color="success">Yes</badge> |
+| `.java` | <badge color="success">Yes</badge> |
+| `.h` | <badge color="success">Yes</badge> |
+| `.exe` | <badge color="danger">No</badge> |
+| `.class` | <badge color="danger">No</badge> |
+| `.pyc` | <badge color="danger">No</badge> |
+| `.vscode` personal settings | <badge color="warning">Usually no</badge> |
+| `README.md` | <badge color="success">Yes</badge> |
+| `.gitignore` | <badge color="success">Yes</badge> |
+
+## 3. Recommended GitHub folder structure
+
+I suggest organizing your programming practice like this:
+
+<box border radius="lg" padding={3} gap={2}>
+  <row align=center gap={2}>
+    <icon name="folder" color="#D6A447" size="lg"/>
+    **Programming-Practice/**
+  </row>
+  <box padding={{left:4}} gap={2}>
+    <row align=center gap={2}>
+      <icon name="folder" color="#D6A447"/> C/
+    </row>
+    <box padding={{left:4}} gap={1}>
+      <row align=center gap={2}><icon name="file-code"/> Exp01.c</row>
+      <row align=center gap={2}><icon name="file-code"/> Exp08.c</row>
+      <row align=center gap={2}><icon name="folder" color="#D6A447"/> Data-Structures/</row>
+    </box>
+    <row align=center gap={2}>
+      <icon name="folder" color="#D6A447"/> C++/
+    </row>
+    <row align=center gap={2}>
+      <icon name="folder" color="#D6A447"/> Python/
+    </row>
+    <row align=center gap={2}>
+      <icon name="folder" color="#D6A447"/> Java/
+    </row>
+    <row align=center gap={2}>
+      <icon name="file-text"/> README.md
+    </row>
+    <row align=center gap={2}>
+      <icon name="file"/> .gitignore
+    </row>
+  </box>
+</box>
+
+## 4. Upload to GitHub
+
+Open the terminal in your main project folder:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit: Programming practice"
+```
+
+Then create a repository on GitHub and connect it:
+
+```bash
+git branch -M main
+git remote add origin YOUR_GITHUB_REPOSITORY_URL
+git push -u origin main
+```
+
+Replace `YOUR_GITHUB_REPOSITORY_URL` with your actual repository URL.
+
+## 5. Three important things
+
+- Never upload passwords, API keys, tokens or private credentials.
+- Don't upload `.exe` files; GitHub can store your source code instead.
+- Don't upload your entire MSYS2 installation or Python environment.
+
+**My recommendation:** Keep one GitHub repository called `Programming-Practice` and organize all four languages inside it. This will make your learning progress easy to track.
+
+I can also help you create a professional `README.md` for your programming repository.
